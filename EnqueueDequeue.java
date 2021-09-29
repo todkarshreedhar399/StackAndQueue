@@ -1,4 +1,4 @@
-public class Enqueue {
+public class EnqueueDequeue {
     private int[] arr;
     private int size;
     private int rear;
@@ -6,7 +6,7 @@ public class Enqueue {
     private int front;
     private int count;
 
-    public Enqueue(int size) {
+    public EnqueueDequeue(int size) {
         this.arr = new int[size];
         this.size = size;
         this.rear = -1;
@@ -51,13 +51,13 @@ public class Enqueue {
     }
 
     public static void main(String[] args) {
-        Enqueue enqueue = new Enqueue(3);
-        enqueue.enqueue(70);
-        enqueue.enqueue(30);
-        enqueue.enqueue(56);
-        enqueue.display();
-        enqueue.dequeue();
-        enqueue.display();
+        EnqueueDequeue createQueue = new EnqueueDequeue(3);
+        createQueue.enqueue(70);
+        createQueue.enqueue(30);
+        createQueue.enqueue(56);
+        createQueue.display();
+        createQueue.dequeue();
+        createQueue.display();
     }
 
 
